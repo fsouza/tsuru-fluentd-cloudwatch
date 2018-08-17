@@ -8,4 +8,4 @@ ADD fluentd.conf /etc/fluentd.conf.template
 ADD entrypoint.sh /entrypoint.sh
 
 ENTRYPOINT ["/entrypoint.sh"]
-EXPOSE 1514
+EXPOSE 1514/udp
