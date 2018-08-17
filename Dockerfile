@@ -4,6 +4,7 @@ ENV LOG_GROUP_NAME fluentd-group
 ENV LOG_STREAM_PREFIX fluentd-stream
 
 RUN gem install fluent-plugin-cloudwatch-logs
+RUN gem install fluent-plugin-rewrite-tag-filter
 ADD fluentd.conf /etc/fluentd.conf.template
 ADD entrypoint.sh /entrypoint.sh
 
